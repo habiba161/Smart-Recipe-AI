@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Recipe AI</title>
+</head>
+<body>
+    <h1>Smart Recipe AI</h1>
+    <div> <h3>Habiba Monem 60303744 - Dana Alremaihi 60301807</h3></div>
+    <p>Enter the ingredients you have and get a recipe idea.</p>
+
+    <form method="POST">
+        <input type="text" name="ingredients" placeholder="e.g. eggs, tomato, cheese" required>
+        <button type="submit">Generate Recipe</button>
+    </form>
+
+    {% if recipe %}
+        <h2>Generated Recipe</h2>
+        <pre>{{ recipe }}</pre>
+    {% endif %}
+</body>
+</html>
